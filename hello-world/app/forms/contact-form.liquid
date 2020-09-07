@@ -1,0 +1,29 @@
+---
+name: contact_form
+resource: contact
+resource_owner: anyone
+fields:
+  properties:
+    email:
+      validation:
+        presence: true
+        email: true
+email_notifications:
+- contact-notification
+---
+
+{% form %}
+
+  <div class="row">
+    <div class="form-group col-6">
+      <label for="email">Email:</label>
+      <input name="{{ form.fields.properties.email.name }}" value="{{ form.fields.properties.email.value }}" id="email" type="email" class="form-control">
+      {% if form.errors['properties.email'] %}
+        <p>{{ form.errors['properties.email'] }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <button class="btn btn-primary btn-lg">Save</button>
+{% endform %}
+

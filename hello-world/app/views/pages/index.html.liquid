@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Header */
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        body {
+            font-size: 16px;
+            position: relative;
+            
+        }
+        .header-title {
+            display: flex; 
+            justify-content: space-between; 
+            background-color: #cb2324;
+            color: white;
+        }
+        .header-title .navBar  {
+            width: 50%
+        }
+        .header-title nav ul {
+            display:flex;
+            justify-content: space-around;
+        }
+        .header-title nav ul li {
+            margin-top: 20px
+        }
+        /* Solgan */
+        .slogan {
+          width: 70%;
+          margin: auto;
+
+        }
+
+        /* Title */
+        .title {
+          width: 70%;
+          margin: auto;
+          text-align: center;
+        }
+        .title h1 {
+          font-size: 4rem;
+          letter-spacing: 2px;
+
+        }
+        /* Content */
+        .content {
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            background-color: #f1f1f1;
+
+        }
+        .content h4 {
+            font-weight: bold;
+            color: #0275d8;
+            margin: 10px
+        }
+        .content p, .question div {
+            display: inline;
+            margin: 5px
+        }
+        .content .group {
+            display: block;
+        }
+
+        .content .highlighted {
+            background-color: #ffe9e8;
+        }
+        .content .button {
+            width: 20%;
+            margin: auto;
+            text-align: center;
+        }
+        .content button {
+            height: 2rem;
+            background-color:black;
+            color: white;
+            width: 100%;
+            font-weight: 700;
+            font-size: 1rem;
+            margin: 10px
+        }
+    </style>
+</head>
+<body>
+    <div class="header-title">
+        <div class="logo">
+            <h1>Salon<span>Everywhere</span></h1>
+            <p>Your Pro, Your Venue, Your Choice</p>
+        </div>
+        <div class="navBar">
+            <nav>
+                <ul>
+                    <li><a href="#">Homee</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="slogan">
+      <img src="../../assets/images/slogan.jpg" alt="">
+    </div>
+    <div class="title">
+      <h1>Health Questionnaire</h1>
+    </div>
+    <form action="thanks">
+      <div class="content group">
+        <div class="question">
+            <div class="question1">
+                <h4 class="q1">Do you have any of the symptoms or signs?</h4>
+    
+            <div class="cough">
+                <p class="highlighted">New or worsening cough:</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="cough" id="cough-true" autocomplete="off" required> Yes
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="cough" id="cough-false" autocomplete="off"> No
+                </label>
+                
+              </div>
+            </div>
+    
+            <div class="breath group">
+                <p>Shortness of breath:</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="breath" id="breath-true" autocomplete="off" required> Yes
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="breath" id="breath-false" autocomplete="off"> No
+                </label>            
+              </div>
+            </div>
+    
+            <div class="throat group">
+                <p class="highlighted">Sore throat:</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="throat" id="throat-true" autocomplete="off" required> Yes
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="throat" id="throat-false" autocomplete="off"> No
+                </label>            
+              </div>
+            </div>
+    
+            <div class="general group">
+                <p>Runny nose, sneezing or nasal congestion (in absence of underlying reasons for symptoms such as seasonal allergies and post nasal drip):</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="general" id="general-true" autocomplete="off" required> Yes
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="general" id="general-false" autocomplete="off"> No
+                </label>            
+              </div>
+            </div>
+    
+            <div class="voice group">
+                <p class="highlighted">Hoarse voice:</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="voice" id="voice-true" autocomplete="off" required> Yes
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="voice" id="voice-false" autocomplete="off"> No
+                </label>            
+              </div>
+            </div>
+            
+            <div class=" swallowing group">
+                <p>Difficulty swallowing:</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="swallowing" id="swallowing-true" autocomplete="off" required> Yes
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="swallowing" id="swallowing-false" autocomplete="off"> No
+                </label>            
+              </div>
+            </div>
+    
+            <div class="taste group">
+                <p class="highlighted">New smell or taste disorder(s):</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="taste" id="taste-true" autocomplete="off" required> Yes
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="taste" id="taste-false" autocomplete="off"> No
+                </label>            
+              </div>
+            </div>
+    
+            <div class="pain group">
+                <p>Nausea/vomiting, diarrhea, abdominal pain:</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="pain" id="pain-true" autocomplete="off" required> Yes
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="pain" id="pain-false" autocomplete="off"> No
+                </label>            
+              </div>
+            </div>
+    
+            <div class="fatigue group">
+                <p class="highlighted">Unexplained fatigue/malaise:</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="fatigue" id="fatigue-true" autocomplete="off" required> Yes
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="fatigue" id="fatigue-false" autocomplete="off"> No
+                </label>            
+              </div>
+            </div>
+    
+            <div class="chills group">
+                <p>Chills:</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="chills" id="chills-true" autocomplete="off" required> Yes
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="chills" id="chills-false" autocomplete="off"> No
+                </label>            
+              </div>
+            </div>
+    
+            <div class="headache group">
+                <p class="highlighted">Headache:</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="headache" id="headache-true" autocomplete="off" required> Yes
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="headache" id="headache-false" autocomplete="off"> No
+                </label>            
+              </div>
+            </div>
+            </div>
+    
+            <div class="travel question2">
+                <div class="group">
+                    <h4>Have you travelled outside of Canada or had close contact with anyone that has travelled outside of Canada in the past 14 days?:</h4>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="travel" id="travel-true" autocomplete="off" required> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="travel" id="travel-false" autocomplete="off"> No
+                    </label>            
+                  </div>
+                </div>
+            </div>
+    
+            <div class="fever question3">
+                <div class="group">
+                    <h4>Do you have a fever?:</h4>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="fever" id="fever-true" autocomplete="off" required> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="fever" id="fever-false" autocomplete="off"> No
+                    </label>            
+                  </div>
+                </div>
+            </div>
+    
+            <div class="closedContact question4">
+                <div class="group">
+                    <h4>Have you had close contact with anyone with respiratory illness or a confirmed or probable case of <br>COVID-19?:</h4>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="closedContact" id="closedContact-true" autocomplete="off" required> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="closedContact" id="closedContact-false" autocomplete="off"> No
+                    </label>            
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit">
+              Submit
+            </button>
+        </div>
+    </form>
+</body>
+</html>
+
